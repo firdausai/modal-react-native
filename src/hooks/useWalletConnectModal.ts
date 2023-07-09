@@ -13,6 +13,7 @@ export function useWalletConnectModal() {
     isOpen: modalState.open,
     open: ModalCtrl.open,
     close: ModalCtrl.close,
+    disconnect: AccountCtrl.resetAccount,
     provider: clientState.initialized ? ClientCtrl.provider() : undefined,
     isConnected: accountState.isConnected,
     address: accountState.address,
